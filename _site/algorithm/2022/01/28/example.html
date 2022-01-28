@@ -15,12 +15,12 @@
     property="og:title"
     content="
         
-            AtCoder
+            Example Post
         
     " 
 />
 
-<meta property="og:url" content="http://localhost:4000//category/AtCoder.html" />
+<meta property="og:url" content="http://localhost:4000//algorithm/2022/01/28/example.html" />
 
     <meta property="og:type" content="article" />
 
@@ -32,7 +32,7 @@
 
 <title>
     
-        AtCoder
+        Example Post
     
 </title>
 </head>
@@ -213,26 +213,46 @@
     </nav>
 </header>
 
-    <section class="feed">
-    <section class="feed__description">
-        
-            <h1>AtCoder</h1>
-        
-        
-    </section>
-     
-    
-    <section class="snippet snippet_algorithm-2022-01-28-example">
+    <article class="post">
+
+    <div class="post__title">
+        <h1 class="post__title__text">Example Post</h1>
+    </div>
+    <div class="post__meta"> 
+        <div class="post__meta__category">
             
-                
+                <p class="post__meta__category__title" style="background: var(--c-themeHueGreen)">Algotirhm</p>
             
-    </section>
+        </div>
+        <p class="post__meta__divider">·</p>
+        <div class="post__meta__date">
+            January 28, 2022
+        </div>
+        
+    </div>
+
     
-    <section class="snippet snippet_jekyll-update-2022-01-28-welcome-to-jekyll">
-            
-    </section>
-    
-</section>
+
+    <div class="post__content">
+        <p>한글과 알고리즘</p>
+
+<p>Follow the flow.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;iostream&gt;
+#include &lt;queue&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">priority_queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">greater</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">Q</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">a</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span><span class="p">;</span> <span class="n">Q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">Q</span><span class="p">.</span><span class="n">top</span><span class="p">();</span> <span class="n">Q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+
+    </div>
+</article>
+
     
     <footer class="footer">
         <section class="footer__about">
