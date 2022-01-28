@@ -8,23 +8,23 @@
         hue: "var(--c-themeHueOrange)" #Submenu item hue.
         subnav: #Another subnav
             - title: AtCoder Beginner Contest
-              url: ABC.html
+              url: category/ABC.html
               hue: "var(--c-themeHueBlue)"
             - title: AtCoder Regular Contest
-              url: ARC.html
+              url: category/ARC.html
               hue: "var(--c-themeHueBlue)"
-      - title: CodeForces #Submenu item title.
-        url: category/CodeForces.html #Submenu item url.
-        hue: "var(--c-themeHueOrange)" #Submenu item hue.
-        subnav: #Another subnav
+      - title: CodeForces
+        url: category/CodeForces.html
+        hue: "var(--c-themeHueOrange)"
+        subnav:
             - title: Codeforces Round Div. 1
-              url: CRD1.html
+              url: category/CRD1.html
               hue: "var(--c-themeHueBlue)"
             - title: Codeforces Round Div. 2
-              url: CRD2.html
+              url: category/CRD2.html
               hue: "var(--c-themeHueBlue)"
             - title: Educational Codeforces Round Div. 2
-              url: ECRD.html
+              url: category/ECRD.html
               hue: "var(--c-themeHueBlue)"
 - title: Algorithm
   url: category/Algorithm.html
