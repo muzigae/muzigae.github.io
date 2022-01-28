@@ -3,6 +3,5 @@
 .jekyll-cache
 .sass-cache
 Gemfile.lock
-*.md
 assets/img/authors
 assets/posts
