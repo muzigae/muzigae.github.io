@@ -1,32 +1,32 @@
 - title: PS #Menu item title.
-  url: category/programming.html #Menu item url.
+  url: category/PS.html #Menu item url.
   icon:  #Menu item icon.
   hue: "var(--c-themeHueRed)" #Menu item hue - see note [1].
   subnav: #Subnav. See note [2].
       - title: AtCoder #Submenu item title.
-        url: category/cpp.html #Submenu item url.
+        url: category/AtCoder.html #Submenu item url.
         hue: "var(--c-themeHueOrange)" #Submenu item hue.
         subnav: #Another subnav
             - title: AtCoder Beginner Contest
-              url: libs.html
+              url: ABC.html
               hue: "var(--c-themeHueBlue)"
             - title: AtCoder Regular Contest
-              url: libs.html
+              url: ARC.html
               hue: "var(--c-themeHueBlue)"
       - title: CodeForces #Submenu item title.
-        url: category/cpp.html #Submenu item url.
+        url: category/CodeForces.html #Submenu item url.
         hue: "var(--c-themeHueOrange)" #Submenu item hue.
         subnav: #Another subnav
             - title: Codeforces Round Div. 1
-              url: libs.html
+              url: CRD1.html
               hue: "var(--c-themeHueBlue)"
             - title: Codeforces Round Div. 2
-              url: libs.html
+              url: CRD2.html
               hue: "var(--c-themeHueBlue)"
             - title: Educational Codeforces Round Div. 2
-              url: libs.html
+              url: ECRD.html
               hue: "var(--c-themeHueBlue)"
 - title: Algorithm
-  url: category/design.html
+  url: category/Algorithm.html
   icon: 
   hue: "var(--c-themeHueGreen)"
