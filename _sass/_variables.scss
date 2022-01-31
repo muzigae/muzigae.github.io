@@ -4,23 +4,45 @@
 // Contains all the useful variables for colors, sizes...
 
 // THEME COLORS
-:root{
-
+:root {
     --c-themePrimaryLight: #EFEFEF;
-    --c-themePrimaryDark:  #101010;
+    --c-themePrimaryDark: #101010;
     --c-themeSecondaryLight: #DADADA;
     --c-themeSecondaryDark: #252525;
     --c-themeTerniaryLight: #AEAEAE;
     --c-themeTerniaryDark: #515151;
     --c-themeQuaternaryLight: #919191;
     --c-themeQuaternaryDark: #888888;
-
     --c-themeHueRed: #C02717;
     --c-themeHueGreen: #8EA604;
     --c-themeHueBlue: #2E86AB;
     --c-themeHueOrange: #E59500;
     --c-themeHuePurple: #9F00CE;
     --c-themeHueBrown: #230007;
+
+    // Add Color
+    --c-themePureBlue: #0000FF;
+    --c-themeMagenta: #FF00FF;
+    --c-themeLime: #FFFF00;
+    --c-themeGreen: #008000;
+    --c-themeAqua: #00FFFF;
+    --c-themeNavy: #000080;
+    --c-themeBlack: #000000;
+    --c-themeAquamarine: #7FFFD4;
+    --c-themeSpringGreen: #00FA9A;
+    --c-themeLightPurple: #7B68EE;
+    --c-themeDeepPink: #FF1493;
+    --c-themeGold: #FFD700;
+    --c-themeSalmon: #FFA07A;
+    --c-themeForestGreen: #228B22;
+    --c-themeDeepSkyBlue: #008FFF;
+    --c-themeTurquoise: #40E0D0;
+    --c-themeIndigo: #4B0082;
+    --c-themePureRed: #FF0000;
+    --c-themeDarkBlue: #00008B;
+    --c-themeTomato: #FF6347;
+    --c-themeOrangeRed: #FF4500;
+    --c-themeMediumBlue: #0000CD;
 }
 
 // ELEMENT COLORS
