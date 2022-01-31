@@ -1,6 +1,6 @@
 ---
-category: [AtCoder Regular Contest] #Category ID.
-hue: var(--c-themeHueRed) #Category hue. See note [1].
-title: AtCoder Regular Contest #Category title.
+category: [Regular Contest] #Category ID.
+hue: var(--c-themethemeTomato) #Category hue. See note [1].
+title: Regular Contest #Category title.
 description: 
 ---

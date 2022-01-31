@@ -1,6 +1,6 @@
 ---
 category: [AtCoder] #Category ID.
-hue: var(--c-themeHueRed) #Category hue. See note [1].
+hue: var(--c-themeOrangeRed) #Category hue. See note [1].
 title: AtCoder #Category title.
 description: 
 ---

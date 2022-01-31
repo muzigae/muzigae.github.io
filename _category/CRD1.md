@@ -1,6 +1,6 @@
 ---
-category: [Codeforces Round Div. 1] #Category ID.
+category: [Round Div. 1] #Category ID.
 hue: var(--c-themeHueRed) #Category hue. See note [1].
-title: Codeforces Round Div. 1 #Category title.
+title: Round Div. 1 #Category title.
 description: 
 ---
