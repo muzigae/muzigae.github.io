@@ -1,6 +1,6 @@
 ---
-category: [AtCoder]
+category: [BOJ]
 hue: var(--c-themeBlack)
-title: AtCoder
+title: BOJ
 description: 
 ---
