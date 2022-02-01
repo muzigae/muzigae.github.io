@@ -75,23 +75,34 @@ table:not([class]){
     }
 }
 
-.highlight{
+.highlight {
+    font-family: var(--f-code);
+    font-size: 16px;
+
+    @include for-size('tablet'){
+        font-size: 18px;
+    }
+    line-height: 1.45em;
 
     margin: 2rem 0;
     transition: $t-smooth;
     box-shadow: inset 0px 0px 14px -4px var(--c-codeShadow);
 
-    &:hover{
+    &:hover {
         box-shadow: inset 0px 0px 14px -4px var(--c-codeShadowHover);
     }
 
     max-width: calc(100vw - 2rem);
     overflow-x: auto;
 
-    pre{
+    pre {
         margin: 0;
         padding: 1rem;
     }
+}
+
+.code {
+    font-family: var(--f-code);
 }
 
 .sx-center{
