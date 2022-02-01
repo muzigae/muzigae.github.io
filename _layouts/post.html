@@ -24,8 +24,9 @@ layout: default
             <p class="post__meta__divider">·</p>
             <div class="post__meta__author">
                 <p>by </p>
-                <img class="post__meta__author__photo" src="{{ site.url }}/{{ author.photo_dir }}"/>
-                <p>{{ author.full_name }}</p>
+                <!-- author image -->&nbsp;&nbsp;
+                <!-- <img class="post__meta__author__photo" src="{{ site.url }}/{{ author.photo_dir }}"/> -->
+                <p><a href="https://github.com/muzigae">{{ author.full_name }}</a></p>
             </div>
         {% endif %}
     </div>
@@ -55,6 +56,11 @@ layout: default
     {% endif %}
 
     <div class="post__content">
+        <!-- code font -->
+        <link class="highlight" rel="stylesheet" 
+            href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap">
+        <!-- code syntax.css -->
+            <link rel="stylesheet" href="/assets/css/gruvbox.css">
         {{ content }}
     </div>
 </article>
