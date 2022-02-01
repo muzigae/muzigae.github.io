@@ -1,6 +1,6 @@
 ---
-category: [Regular Contest] #Category ID.
-hue: var(--c-themethemeTomato) #Category hue. See note [1].
-title: Regular Contest #Category title.
+category: [Regular Contest]
+hue: var(--c-themePureRed)
+title: Regular Contest
 description: 
 ---

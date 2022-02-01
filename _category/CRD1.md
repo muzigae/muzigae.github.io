@@ -1,6 +1,6 @@
 ---
-category: [Round Div. 1] #Category ID.
-hue: var(--c-themeHueRed) #Category hue. See note [1].
-title: Round Div. 1 #Category title.
+category: [Round Div. 1]
+hue: var(--c-themeHueRed)
+title: Round Div. 1
 description: 
 ---
