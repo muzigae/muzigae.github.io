@@ -261,7 +261,7 @@
                     >.list{
                         position: absolute;
                         top: calc(100% + 1rem);
-                        left: 0;
+                        left: -1.5rem; // subnav margin
                         z-index: 1000;
                         background: var(--c-pageBackground);
 
