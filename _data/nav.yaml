@@ -3,29 +3,32 @@
   icon:  #Menu item icon.
   hue: "var(--c-themeHueRed)" #Menu item hue - see note [1].
   subnav: #Subnav. See note [2].
-      - title: AtCoder #Submenu item title.
-        url: category/AtCoder.html #Submenu item url.
-        hue: "var(--c-themeOrangeRed)" #Submenu item hue.
+      - title: BOJ #Submenu item title.
+        url: category/BOJ.html #Submenu item url.
+        hue: "var(--c-themeIndigo)" #Submenu item hue.
+      - title: AtCoder
+        url: category/AtCoder.html
+        hue: "var(--c-themeIndigo)"
         subnav: #Another subnav
             - title: AtCoder Beginner Contest
               url: category/ABC.html
-              hue: "var(--c-themeTomato)"
+              hue: "var(--c-themeLightPurple)"
             - title: AtCoder Regular Contest
               url: category/ARC.html
-              hue: "var(--c-themeTomato)"
+              hue: "var(--c-themeLightPurple)"
       - title: CodeForces
         url: category/CodeForces.html
-        hue: "var(--c-themeOrangeRed)"
+        hue: "var(--c-themeIndigo)"
         subnav:
             - title: Codeforces Round Div. 1
               url: category/CRD1.html
-              hue: "var(--c-themeTomato)"
+              hue: "var(--c-themeLightPurple)"
             - title: Codeforces Round Div. 2
               url: category/CRD2.html
-              hue: "var(--c-themeTomato)"
+              hue: "var(--c-themeLightPurple)"
             - title: Educational Codeforces Round Div. 2
               url: category/ECRD.html
-              hue: "var(--c-themeTomato)"
+              hue: "var(--c-themeLightPurple)"
 - title: Algorithm
   url: category/Algorithm.html
   icon: 
