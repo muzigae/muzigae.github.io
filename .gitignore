@@ -5,3 +5,7 @@
 Gemfile.lock
 assets/img/authors
 assets/posts
+node_modules
+gulpfile.js
+package.json
+package-lock.json
