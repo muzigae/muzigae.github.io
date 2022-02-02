@@ -1,6 +1,7 @@
 title: Algol Queue
-logo_img: 
-favicon: 
+#Absolute path to the logo. If not specified, the title will be displayed instead.
+logo_img: /assets/img/icons/icons8-pancake-stack-100.svg
+favicon: /assets/img/icons/icons8-pancake-stack-96.ico
 description: Algorithm Record
 global_tags: queue responsive html5
 copyright: © muzigae 2022
@@ -21,3 +22,10 @@ defaults:
       type: category
     values:
       layout: "category"
+
+markdown: kramdown
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
