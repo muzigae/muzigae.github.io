@@ -2,6 +2,8 @@
 // global.scss
 // =============================
 // Used for global styles.
+// Nanum Gothic Coding font
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
 *, *:before, *:after{
     box-sizing: border-box;
@@ -42,6 +44,7 @@ h1{
 }
 
 p{
+
     font-size: var(--s-p);
 }
 
@@ -76,14 +79,13 @@ table:not([class]){
 }
 
 .highlight {
-    font-family: var(--f-code);
     font-size: 16px;
 
-    @include for-size('tablet'){
+    @include for-size('tablet') {
         font-size: 18px;
     }
-    line-height: 1.45em;
 
+    line-height: 1.5em;
     margin: 2rem 0;
     transition: $t-smooth;
     box-shadow: inset 0px 0px 14px -4px var(--c-codeShadow);
@@ -96,13 +98,14 @@ table:not([class]){
     overflow-x: auto;
 
     pre {
+        font-family: var(--f-code);
         margin: 0;
         padding: 1rem;
     }
-}
 
-.code {
-    font-family: var(--f-code);
+    span {
+        font-family: var(--f-code);
+    }
 }
 
 .sx-center{

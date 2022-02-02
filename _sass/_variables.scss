@@ -107,7 +107,7 @@
     --c-tableBorder: var(--c-themePrimaryDark);
 
     --c-subtitle: var(--c-themeTerniaryDark);
-
+    
     //Syntax highlighting.
     /* original highlighting
     .highlight .hll { background-color: #ffffcc }
@@ -308,11 +308,10 @@
 }
 
 // FONTS
-:root{
-
+:root {
     --f-header: Roboto;
     --f-text: Roboto Slab;
-    --f-code: NGC;
+    --f-code: D2, 'D2', monospace;
 }
 
 // FIXED SIZES
