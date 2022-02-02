@@ -1,30 +1,23 @@
-/*.highlight {
-    position: relative;
-    margin: 0 auto;
-    padding: 70px 100px 0;
-    min-height: 230px;
-    font-family: 'Nanum Gothic Coding', 'Nanum Gothic Coding', serif;
-    font-size: 1rem;
-    line-height: 1.6em;
-    background: #fff;
-}*/
-
 @font-face {
-    font-family: 'Nanum Gothic Coding', monospace;
-    src: url('NanumGothicCoding-Regular.woff2') format('woff2'),
-        url('NanumGothicCoding-Regular.woff') format('woff'),
-        url('NanumGothicCoding-Regular.ttf') format('truetype'),
-        url('NanumGothicCoding-Regular.otf') format('opentype');
+    font-family: "D2";
+    src: local("¡Ø"),
+    url(D2Coding-ligature.eot),
+    url(D2Coding-ligature.svg),
+    url(D2Coding-ligature.woff2) format('woff2'),
+    url(D2Coding-ligature.woff) format('woff');
+    
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Nanum Gothic Coding', monospace;
-    src: url('NanumGothicCoding-Bold.woff2') format('woff2'),
-        url('NanumGothicCoding-Bold.woff') format('woff'),
-        url('NanumGothicCoding-Bold.ttf') format('truetype'),
-        url('NanumGothicCoding-Bold.otf') format('opentype');
+    font-family: "D2";
+    src: local("¡Ø"), 
+    url(D2CodingBold-ligature.eot),
+    url(D2CodingBold-ligature.svg),
+    url(D2CodingBold-ligature.woff2) format('woff2'),
+    url(D2CodingBold-ligature.woff) format('woff');
+    
     font-weight: bold;
     font-style: normal;
 }
