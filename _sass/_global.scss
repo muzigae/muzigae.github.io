@@ -2,8 +2,6 @@
 // global.scss
 // =============================
 // Used for global styles.
-// Nanum Gothic Coding font
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
 *, *:before, *:after{
     box-sizing: border-box;
@@ -48,21 +46,21 @@ p{
     font-size: var(--s-p);
 }
 
-a{
-    
-    &:link{
+a {
+
+    &:link {
         color: var(--c-link);
     }
 
-    &:visited{
+    &:visited {
         color: var(--c-linkVisited);
     }
 
-    &:hover{
+    &:hover {
         color: var(--c-linkHover);
     }
 
-    &:active{
+    &:active {
         color: var(--c-linkActive);
     }
 }
