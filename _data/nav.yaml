@@ -1,6 +1,6 @@
 - title: PS #Menu item title.
   url: category/PS.html #Menu item url.
-  icon:  #Menu item icon.
+  icon: assets/img/icons/icons8-c++black.svg #Menu item icon.
   hue: "var(--c-themeHueRed)" #Menu item hue - see note [1].
   subnav: #Subnav. See note [2].
       - title: BOJ #Submenu item title.
@@ -31,5 +31,5 @@
               hue: "var(--c-themeLightPurple)"
 - title: Algorithm
   url: category/Algorithm.html
-  icon: 
+  icon: assets/img/icons/icons8-octaedro.svg
   hue: "var(--c-themeMediumBlue)"
