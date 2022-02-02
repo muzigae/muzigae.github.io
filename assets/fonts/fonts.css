@@ -11,20 +11,20 @@
 
 @font-face {
     font-family: 'Nanum Gothic Coding', monospace;
-    src: url('/assets/fonts/NanumGothicCoding-Regular.woff2') format('woff2'),
-        url('/assets/fonts/NanumGothicCoding-Regular.woff') format('woff'),
-        url('/assets/fonts/NanumGothicCoding-Regular.ttf') format('truetype'),
-        url('/assets/fonts/NanumGothicCoding-Regular.otf') format('opentype');
+    src: url('NanumGothicCoding-Regular.woff2') format('woff2'),
+        url('NanumGothicCoding-Regular.woff') format('woff'),
+        url('NanumGothicCoding-Regular.ttf') format('truetype'),
+        url('NanumGothicCoding-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Nanum Gothic Coding', monospace;
-    src: url('/assets/fonts/NanumGothicCoding-Bold.woff2') format('woff2'),
-        url('/assets/fonts/NanumGothicCoding-Bold.woff') format('woff'),
-        url('/assets/fonts/NanumGothicCoding-Bold.ttf') format('truetype'),
-        url('/assets/fonts/NanumGothicCoding-Bold.otf') format('opentype');
+    src: url('NanumGothicCoding-Bold.woff2') format('woff2'),
+        url('NanumGothicCoding-Bold.woff') format('woff'),
+        url('NanumGothicCoding-Bold.ttf') format('truetype'),
+        url('NanumGothicCoding-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
