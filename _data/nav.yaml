@@ -1,6 +1,6 @@
 - title: PS #Menu item title.
   url: category/PS.html #Menu item url.
-  icon: assets/img/icons/icons8-c++black.svg #Menu item icon.
+  icon: assets/img/icons/icons8-c++.svg #Menu item icon.
   hue: "var(--c-themeHueRed)" #Menu item hue - see note [1].
   subnav: #Subnav. See note [2].
       - title: BOJ #Submenu item title.
