@@ -23,9 +23,17 @@ defaults:
     values:
       layout: "category"
 
+# Syntax Highlighting
 markdown: kramdown
 kramdown:
     highlighter: rouge
     syntax_highlighter_opts:
         block:
             line_numbers: true
+
+# Math
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
