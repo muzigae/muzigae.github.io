@@ -7,6 +7,9 @@
 <head>
     <meta charset="utf-8" />
     {% include head.html %}
+    {% if page.use_math %}
+        {% include mathjax_support.html %}
+    {% endif %}
 </head>
 <body class="index">
 
