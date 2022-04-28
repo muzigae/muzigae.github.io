@@ -33,3 +33,7 @@
   url: category/Algorithm.html
   icon: assets/img/icons/icons8-octaedro.svg
   hue: "var(--c-themeMediumBlue)"
+- title: Math
+  url: category/Math.html
+  icon: assets/img/icons/icons8-geogebra-alok.svg
+  hue: "var(--c-themeDarkOrange)"
