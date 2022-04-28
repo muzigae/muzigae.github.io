@@ -1,6 +1,6 @@
 ---
 category: [Math] #Category ID.
-hue: var(--c-themeTomato) #Category hue.
+hue: var(--c-themeDarkOrange) #Category hue.
 title: Math #Category title.
 description: Mathematics
 ---
