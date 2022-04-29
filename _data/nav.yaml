@@ -11,23 +11,23 @@
         hue: "var(--c-themeIndigo)"
         subnav: #Another subnav
             - title: AtCoder Beginner Contest
-              url: category/ABC.html
+              url: category/AtCoder_ABC.html
               hue: "var(--c-themeLightPurple)"
             - title: AtCoder Regular Contest
-              url: category/ARC.html
+              url: category/AtCoder_ARC.html
               hue: "var(--c-themeLightPurple)"
       - title: CodeForces
         url: category/CodeForces.html
         hue: "var(--c-themeIndigo)"
         subnav:
             - title: Codeforces Round Div. 1
-              url: category/CRD1.html
+              url: category/CodeForces_CRD1.html
               hue: "var(--c-themeLightPurple)"
             - title: Codeforces Round Div. 2
-              url: category/CRD2.html
+              url: category/CodeForces_CRD2.html
               hue: "var(--c-themeLightPurple)"
             - title: Educational Codeforces Round Div. 2
-              url: category/ECRD.html
+              url: category/CodeForces_ECRD.html
               hue: "var(--c-themeLightPurple)"
 - title: Algorithm
   url: category/Algorithm.html
@@ -37,3 +37,16 @@
   url: category/Math.html
   icon: assets/img/icons/icons8-geogebra-alok.svg
   hue: "var(--c-themeDarkOrange)"
+      - title: AtCoder
+        url: category/AtCoder.html
+        hue: "var(--c-themeIndigo)"
+        subnav: #Another subnav
+            - title: Linear Algebra
+              url: category/Algebra_Linear.html
+              hue: "var(--c-themeLightPurple)"
+            - title: Abstract Algebra
+              url: category/Algebra_Abstract.html
+              hue: "var(--c-themeLightPurple)"
+      - title: Analysis
+        url: category/Analysis.html
+        hue: "var(--c-themeIndigo)"
