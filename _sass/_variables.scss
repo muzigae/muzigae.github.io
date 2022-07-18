@@ -26,11 +26,14 @@
     --c-themeMagenta: #FF00FF;
     --c-themePureRed: #FF0000;
     --c-themeTomato: #FF6347;
+    --c-themeSnow: #FFFAFA;
     // Orange
     --c-themeGold: #FFD700;
     --c-themeDarkOrange: #FF8C00;
     --c-themeOrangeRed: #FF4500;
     --c-themeSalmon: #FFA07A;
+    --c-themeIvory: #FFFFF0;
+    --c-themeFloralWhite: #FFFAF0;
     // Green
     --c-themeLime: #00FF00;
     --c-themeGreen: #008000;
@@ -61,9 +64,9 @@
     // *** Default light. ***
     --c-articleHeading: var(--c-themePrimaryDark);
     --c-articleParagraph: var(--c-themeSecondaryDark);
-    --c-articleBackground: var(--c-themePrimaryLight);
+    --c-articleBackground: var(--c-themeIvory);
 
-    --c-pageBackground: var(--c-themePrimaryLight);
+    --c-pageBackground: var(--c-themeIvory);
 
     --c-headerImageFilter: none;
     --c-menuLinks: var(--c-themePrimaryDark);
