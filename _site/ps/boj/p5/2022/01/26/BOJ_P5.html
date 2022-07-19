@@ -39,6 +39,30 @@
     
 </title>
     
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    TeX: {
+        equationNumbers: {
+        autoNumber: "AMS"
+        }
+    },
+    tex2jax: {
+        inlineMath: [ ['$', '$'] ],
+        displayMath: [ ['@@', '@@'] ],
+        processEscapes: true,
+    }
+});
+MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+        alert("Math Processing Error: "+message[1]);
+    });
+MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+        alert("Math Processing Error: "+message[1]);
+    });
+</script>
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
 </head>
 <body class="index">
 
@@ -362,7 +386,7 @@
     <div class="post__content">
         <!-- code syntax.css -->
         <link rel="stylesheet" href="/assets/css/gruvbox.css">
-        <p>BOJ 1353 합과 곱</p>
+        <p><a href="https://www.acmicpc.net/problem/1353">BOJ 1353 합과 곱</a></p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -418,8 +442,9 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></figure>
 
-<p><br /><br />
- 산술 평균과 기하 평균을 이용한다.</p>
+<p> 산술 평균과 기하 평균을 이용한다.<br />
+ 수열 $a_1, a_2, ···, a_n$이 주어져 있을 때, 산술-기하 평균 부등식은 다음과 같다.<br />
+@@\frac{a_1+a_2+···+a_n}{n} \ge \sqrt[n]{a_1a_2···a_n}@@</p>
 
     </div>
 </article>
