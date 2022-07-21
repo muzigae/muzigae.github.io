@@ -443,8 +443,23 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 </pre></td></tr></tbody></table></code></pre></figure>
 
 <p> 산술 평균과 기하 평균을 이용한다.<br />
- 수열 $a_1, a_2, ···, a_n$이 주어져 있을 때, 산술-기하 평균 부등식은 다음과 같다.<br />
-@@\frac{a_1+a_2+···+a_n}{n} \ge \sqrt[n]{a_1a_2···a_n}@@</p>
+ 음이 아닌 실수열 $a_1, a_2, ···, a_n$이 주어져 있을 때, 산술-기하 평균 부등식은 다음과 같다.<br />
+@@\frac{a_1+a_2+···+a_n}{n} \ge \sqrt[n]{a_1a_2···a_n}@@
+ 문제에서 주어진 S와 P는 음이 아닌 어떤 실수열, 더하여 P가 자연수이므로 양수열의 합과 곱에 해당한다.
+@@S=a_1+a_2+···+a_n@@
+@@P=a_1a_2···a_n@@
+@@\frac{S}{n} \ge \sqrt[n]{P}@@
+ 그러므로 위와 같이 S와 P를 부등식에 적용할 수 있다. 여기서 $n$이 바로 리스트의 크기가 되며,<br />
+ 결론적으로 위 부등식을 만족시키는 $n$의 최솟값을 구하면 된다.<br />
+ $n$을 $x$라고 하고, 부등식을 다음과 같이 조금 바꿔보자.
+@@(\frac{S}{x})^x \ge P@@
+ 함수로 생각하여 그래프를 그려보면 더 직관적이다.
+@@f(x)=(\frac{S}{x})^x@@
+@@f’(x)=(\frac{S}{x})^{x}(\ln \frac{S}{x}-1)@@
+ $f(x)$는 $x=\frac{S}{e}$에서 극댓값을 가지는 함수이다.<br />
+ 예시로 $S=5$일 때 $f(x)$의 그래프와 $P=4$일 때 $y=P$를 그려보면 다음과 같은 그림이 나온다.<br /><br />
+<img width="500" src="/assets/img/post_img/BOJ1353_plot.png" /><br /><br />
+ </p>
 
     </div>
 </article>
