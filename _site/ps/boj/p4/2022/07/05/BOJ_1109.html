@@ -563,35 +563,14 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 
 <p>바로 이 점을 이용한다. 어떤 섬에서 바다를 탐색할 때 경계에 도달하지 않았다면 다른 섬 안에 있다는 뜻이 되고, 만날 수 있는 섬 중 가장 작은 번호의 섬이 자신을 둘러싼 섬이 된다. 이렇게 각 섬마다 자신을 둘러싼 섬을 찾은 후 각 섬의 높이를 계산하면 끝난다.<br /><br /></p>
 
-<p><big>정리</big></p>
+<p><strong>정리</strong></p>
 <ol>
   <li>지도를 탐색하며 섬에 번호를 붙인다.</li>
   <li>각 섬마다 주변 바다를 탐색한다. 바다가 지도의 경계와 만나지 않는다면, 탐색 도중 만나는 섬 중 가장 작은 번호를 저장한다.</li>
-  <li>섬의 높이를 계산한다.
-```flow
-st=&gt;start: Start
-op=&gt;operation: Your Operation
-cond=&gt;condition: Yes or No?
-e=&gt;end</li>
+  <li>섬의 높이를 계산한다.</li>
 </ol>
 
-<p>st-&gt;op-&gt;con
-cond(yes)-&gt;e
-cond(no)-&gt;op</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="rouge-code"><pre>```mermaid
-pie
-    title Pie Chart
-    "Dogs" : 386
-    "Cats" : 85
-    "Rats" : 150 
-</pre></td></tr></tbody></table></code></pre></div></div>
-<p><br />순서대로 해결해보도록 하자. 이해를 위해 테스트 케이스로 단계별 지도의 모습을 살펴볼 것이다.</p>
+<p><br />순서대로 해결해보자. 이해를 위해 아래의 테스트 케이스로 단계별 지도의 모습을 살펴볼 것이다.</p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="mi">13</span> <span class="mi">40</span>
 <span class="n">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="p">.</span>
@@ -628,7 +607,7 @@ pie
 
 <p>섬에 번호를 붙이기에 앞서, 사전 준비가 필요하다. 지도를 입력받을 때, 바다 부분을 ‘.’이 아닌 다른 값으로 저장하는 작업이다.<br />
 ‘.’는 int 자료형으로 46과 동일하다. 만약 섬의 개수가 46개가 넘는다면, 섬에 번호를 붙였을 때 46번 섬과 바다를 구분할 수 없게 된다.<br />
-지도 크기 조건에 의해 섬의 개수가 2500개를 넘을 수 없으므로 위 코드에서는 바다를 2500으로 저장한다.<br /><br /></p>
+지도 크기 조건에 의해 섬의 개수가 2500개를 넘을 수 없으므로 위 코드에서는 바다를 2500으로 저장했다.<br /><br /></p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// 1. Labeling </span>
 
@@ -643,7 +622,7 @@ pie
 			<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="n">Q</span><span class="p">.</span><span class="n">front</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Q</span><span class="p">.</span><span class="n">front</span><span class="p">()[</span><span class="mi">1</span><span class="p">];</span> <span class="n">Q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
 			<span class="n">v</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="n">cnt</span><span class="p">;</span>
 
-			<span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">d</span> <span class="o">:</span> <span class="n">d8</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">d</span> <span class="o">:</span> <span class="n">d8</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 8방향 BFS</span>
 				<span class="kt">int</span> <span class="n">u</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">w</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
 				<span class="k">if</span> <span class="p">(</span><span class="n">u</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">u</span> <span class="o">&gt;=</span> <span class="n">r</span> <span class="o">||</span> <span class="n">w</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">w</span> <span class="o">&gt;=</span> <span class="n">c</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
 				<span class="k">if</span> <span class="p">(</span><span class="n">check</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">w</span><span class="p">])</span> <span class="k">continue</span><span class="p">;</span>
@@ -656,7 +635,7 @@ pie
 <p>단순한 BFS이다. 탐색하면서 섬을 만나면 연결된 모든 섬을 cnt로 라벨링해준다.<br />
 여기서 섬마다 가장 왼쪽 위에 있는 지점 좌표를 저장한다. 다음 단계에서 섬마다 주변 바다를 탐색하기 위함이다. <br />
 1단계 이후 지도의 모습은 다음과 같다. 알아보기 쉽도록 바다를 ‘.’으로 표시하였다.<br /><br />
-<img width="400" src="/assets/img/post_img/BOJ1109_label.png" />
+<img src="/assets/img/post_img/BOJ1109_label.png" />
 <br /><br /></p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// 2. Surrounding</span>
@@ -669,7 +648,7 @@ pie
 		<span class="kt">int</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">isl</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]][</span><span class="n">isl</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]];</span>
 		<span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Q</span><span class="p">.</span><span class="n">empty</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">sea</span><span class="p">)</span> <span class="p">{</span>
 			<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="n">Q</span><span class="p">.</span><span class="n">front</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Q</span><span class="p">.</span><span class="n">front</span><span class="p">()[</span><span class="mi">1</span><span class="p">];</span> <span class="n">Q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-			<span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">d</span> <span class="o">:</span> <span class="n">d4</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">d</span> <span class="o">:</span> <span class="n">d4</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 4방향 BFS</span>
 				<span class="kt">int</span> <span class="n">u</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">w</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
 				<span class="k">if</span> <span class="p">(</span><span class="n">u</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">u</span> <span class="o">&gt;=</span> <span class="n">r</span> <span class="o">||</span> <span class="n">w</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">w</span> <span class="o">&gt;=</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
 					<span class="n">sea</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span> <span class="c1">// 지도의 경계에 도달했을 경우 탐색 종료</span>
@@ -683,8 +662,14 @@ pie
 		<span class="p">}</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">sea</span><span class="p">)</span> <span class="n">out</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">idx</span><span class="p">;</span> <span class="c1">// 최종 탐색 결과 저장</span>
 	<span class="p">}</span></code></pre></figure>
 
-<p>이번 BFS에서는 방문한 섬과 바다를 구별하기 위해서, 방문한 지점을 바다와도 섬의 번호와도 겹치지 않는 값을 저장해준다.<br />
-위 코드에서는 3000을 저장했다. 다음은 2단계 이후 지도의 모습이다. 마찬가지로 바다를 ‘.’으로 표시했다.<br /></p>
+<p>이번 BFS에서는 방문한 섬과 바다를 구별하기 위해 방문한 지점을 바다와도 섬의 번호와도 겹치지 않는 값을 저장해준다.<br />
+다음은 2단계 이후 지도의 모습이다. 바다를 공백으로, 탐색한 바다는 ‘#’으로 표시하였다.<br /><br />
+ 1번 섬<br />
+<img width="360" src="/assets/img/post_img/BOJ1109_1.png" /><br /><br />
+ 4번 섬<br />
+<img width="360" src="/assets/img/post_img/BOJ1109_4.png" /><br /><br />
+ 5번 섬<br />
+<img width="360" src="/assets/img/post_img/BOJ1109_5.png" /><br /><br /></p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// 3. Calculate</span>
 
@@ -697,6 +682,10 @@ pie
 			<span class="n">max_h</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">max_h</span><span class="p">,</span> <span class="n">l</span><span class="p">);</span>
 		<span class="p">}</span>
 	<span class="p">}</span></code></pre></figure>
+
+<p><img src="/assets/img/post_img/BOJ1109_height.png" /><br />
+마지막으로 위에서 얻은 결과를 통해 각 섬의 높이를 계산한다.<br />
+섬의 최외곽 섬을 따라가면서 높이를 갱신하도록 구현했다. 재귀와 DFS를 사용하는 방법도 있다.</p>
 
     </div>
 </article>
